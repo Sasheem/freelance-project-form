@@ -40,39 +40,106 @@
           </div>
           <div class="form-row">
             <div class="form-label">
-              <label id="plaftorm-label" for="platform">Platform: </label>
+              <label id="plaftorm-label" for="platforms">Platform: <br>(Check all that apply)
+              </label>
             </div>
             <div class="form-input">
-              <input >
+              <ul id="platforms" style="list-style: none;">
+                <li class="checkbox">
+                  <label>
+                    <input name="plaform" value="1" type="checkbox" class="client-option">
+                    iOS (Mobile)
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input name="platform" value="2" type="checkbox" class="client-option">
+                    Android (Mobile)
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input name="platform" value="3" type="checkbox" class="client-option">
+                    Static Website
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input name="platform" value="4" type="checkbox" class="client-option">
+                    WordPress or Squarespace Website
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input name="platform" value="5" type="checkbox" class="client-option">
+                    Dynamic Website
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input name="platform" value="6" type="checkbox" class="client-option">
+                    e-Commerce Website
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input name="platform" value="7" type="checkbox" class="client-option">
+                    Progressive Web App
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="form-row">
             <div class="form-label">
-
+              <label for="previous-work">
+                Have you worked with a freelancer before?
+              </label>
             </div>
             <div class="form-input">
-
+              <ul id="previous-work" style="list-style: none;">
+                <li class="radio">
+                  <label>
+                    <input name="previous-work-buttons" value="1" type="radio" class="client-option">
+                    Yes
+                  </label>
+                </li>
+                <li class="radio">
+                  <label>
+                    <input name="previous-work-buttons" value="2" type="radio" class="client-option">
+                    No
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="form-row">
             <div class="form-label">
-
+              <label for="project-time">
+                Project Time Frame:
+              </label>
             </div>
             <div class="form-input">
-
+              <select id="dropdown" name="project-time" >
+                <option value="short-time">Less Than 1 Month</option>
+                <option value="med-time">Between 1 - 4 Months</option>
+                <option value="long-time">More Than 5 Months</option>
+              </select>
             </div>
           </div>
           <div class="form-row">
             <div class="form-label">
-
+              <label for="project-desc">
+                Project Description:
+              </label>
             </div>
             <div class="form-input">
-
+              <textarea id="project-desc" class="input-field" name="project-desc" placeholder="Short description of your project and any other related information" style="height: 50px; vertical: resize;"></textarea>
             </div>
           </div>
+          <button id="submit" type="submit">Share Idea</button>
         </form>
       </section>
     </main>
-
   </body>
 </html>

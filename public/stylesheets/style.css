@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+.form-row {
+  margin: 2vh 0 2vh 5vh;
+}
