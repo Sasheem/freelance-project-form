@@ -1,12 +1,66 @@
+html, body {
+  background-color: #a7696e;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  min-width: 320px;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 8px;
 }
-
-a {
-  color: #00B7FF;
+#form-section {
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 75%;
+  max-width: 900px;
+  padding: 20px 10px 10px 10px;
 }
-
+form {
+  display: block;
+  margin-top: 0em;
+}
 .form-row {
-  margin: 2vh 0 2vh 5vh;
+  display: flex;
+  flex-direction: row;
+}
+.form-label {
+  flex: 3;
+  text-align: right;
+  padding: 5px;
+  margin-top: 10px;
+}
+.form-input {
+  flex: 4;
+  text-align: left;
+  padding: 10px;
+}
+#name, #email, #number {
+  margin-left: 3vw;
+  font-size: 12px;
+  width: 40%;
+}
+.checkbox, .radio, {
+  position: relative;
+  right: 2vw;
+}
+#dropdown, #project-desc {
+  position: relative;
+  left: 2.5vw;
+  min-width: 40%;
+}
+#project-desc {
+  min-width: 60%;
+  height: auto;
+  min-height: 100px;
+}
+form #submit {
+  background-color: #50b4dc;
+  border-radius: 4px;
+  font-size: 1em;
+  color: white;
+  height: 40px;
+  margin: 10px;
+  border: 0 solid;
+  width: 12%;
 }

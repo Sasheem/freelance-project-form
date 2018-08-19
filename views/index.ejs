@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <main>
       <h1 id="title">Project Survey Form</h1>
       <section id="form-section">
-        <p id="description">Let me know a little bit about your project</p>
+        <p id="description">Let me know a little bit about your project idea below</p>
         <form id="survey-form">
           <div class="form-row">
             <div class="form-label">
               <label id="name-label" for="name">* Name: </label>
             </div>
             <div class="form-input">
-              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required />
             </div>
           </div>
           <div class="form-row">
@@ -27,15 +28,15 @@
               <label id="email-label" for="email">* Email: </label>
             </div>
             <div class="form-input">
-              <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" placeholder>
+              <input type="email" name="email" id="email" class="input-field" placeholder="example@gmail.com" placeholder pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-label">
-              <label id="phone-label" for="number">Phone Number: </label>
+              <label id="number-label" for="number">Phone Number: </label>
             </div>
             <div class="form-input">
-              <input type="tel" name="number" id="number" class="input-field" placeholder="555-555-5555">
+              <input type="number" name="number" id="number" class="input-field" placeholder="5555555555" min="0" max="9999999999" />
             </div>
           </div>
           <div class="form-row">
@@ -47,43 +48,43 @@
               <ul id="platforms" style="list-style: none;">
                 <li class="checkbox">
                   <label>
-                    <input name="plaform" value="1" type="checkbox" class="client-option">
+                    <input name="plaform" value="1" type="checkbox" class="client-option" />
                     iOS (Mobile)
                   </label>
                 </li>
                 <li class="checkbox">
                   <label>
-                    <input name="platform" value="2" type="checkbox" class="client-option">
+                    <input name="platform" value="2" type="checkbox" class="client-option" />
                     Android (Mobile)
                   </label>
                 </li>
                 <li class="checkbox">
                   <label>
-                    <input name="platform" value="3" type="checkbox" class="client-option">
+                    <input name="platform" value="3" type="checkbox" class="client-option" />
                     Static Website
                   </label>
                 </li>
                 <li class="checkbox">
                   <label>
-                    <input name="platform" value="4" type="checkbox" class="client-option">
+                    <input name="platform" value="4" type="checkbox" class="client-option" />
                     WordPress or Squarespace Website
                   </label>
                 </li>
                 <li class="checkbox">
                   <label>
-                    <input name="platform" value="5" type="checkbox" class="client-option">
+                    <input name="platform" value="5" type="checkbox" class="client-option" />
                     Dynamic Website
                   </label>
                 </li>
                 <li class="checkbox">
                   <label>
-                    <input name="platform" value="6" type="checkbox" class="client-option">
+                    <input name="platform" value="6" type="checkbox" class="client-option" />
                     e-Commerce Website
                   </label>
                 </li>
                 <li class="checkbox">
                   <label>
-                    <input name="platform" value="7" type="checkbox" class="client-option">
+                    <input name="platform" value="7" type="checkbox" class="client-option" />
                     Progressive Web App
                   </label>
                 </li>
@@ -100,13 +101,13 @@
               <ul id="previous-work" style="list-style: none;">
                 <li class="radio">
                   <label>
-                    <input name="previous-work-buttons" value="1" type="radio" class="client-option">
+                    <input name="previous-work-buttons" value="1" type="radio" class="client-option" />
                     Yes
                   </label>
                 </li>
                 <li class="radio">
                   <label>
-                    <input name="previous-work-buttons" value="2" type="radio" class="client-option">
+                    <input name="previous-work-buttons" value="2" type="radio" class="client-option" />
                     No
                   </label>
                 </li>
